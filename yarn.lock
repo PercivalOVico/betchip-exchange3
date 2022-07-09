@@ -4498,7 +4498,7 @@
   "resolved" "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
   "version" "4.2.10"
 
-"gun@^0.2020.1235":
+"gun@^0.2020.1237":
   "integrity" "sha512-5WiAMqbLzKfYy/45AVGNrI0OiU7hG5z2hdMeRBMDYXGHzkOUDvbrOnO6qaEqmvCwlwzHJaIilKS51KvMyxhDTQ=="
   "resolved" "https://registry.npmjs.org/gun/-/gun-0.2020.1237.tgz"
   "version" "0.2020.1237"
