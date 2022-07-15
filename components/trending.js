@@ -71,7 +71,7 @@ const Trending = () => {
             <br />
 
             <div className={styles.flexCenter}>
-                <TrendingCard title='Trending' icon={fire} trendingData={trendingData} />
+                <TrendingCard title='Recommended Investments' icon={fire} trendingData={trendingData} />
                 <TrendingBanner title='Betchip Notifications' icon={recent} trendingData={trendingBanner} />
                
             </div>
