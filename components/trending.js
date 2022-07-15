@@ -3,9 +3,13 @@ import Rate from "./cmc-table/rate"
 import fire from "../assets/fire.png"
 import btc from "../assets/btc.png"
 import usdt from "../assets/usdt.png"
+import pundix from "../assets/pundix.png"
+import xem from "../assets/xem.png"
+import fx from "../assets/fx.png"
 import gainers from "../assets/gainers.png"
 import recent from "../assets/recent.png"
 import TrendingCard from "./trendingCard"
+import TrendingBanner from "./trendingBanner"
 import ReactSwitch from "react-switch"
 
 const styles = {
@@ -20,32 +24,38 @@ const Trending = () => {
     const trendingData = [
         {
             number: 1,
-            symbol: "BTC",
-            name: "Bitcoin",
-            icon: btc,
+            symbol: "PUNDIX",
+            name: "Punidix",
+            icon: pundix,
             isIncrement: true,
-            rate: "2.34%"
+            rate: "1.34%"
         }, {
             number: 2,
-            symbol: "USDT",
-            name: "Tether",
-            icon: usdt,
-            isIncrement: false,
-            rate: "9.32%"
-        }, {
-            number: 1,
-            symbol: "BTC",
-            name: "Bitcoin",
-            icon: btc,
+            symbol: "XEM",
+            name: "NEM",
+            icon: xem,
             isIncrement: true,
-            rate: "2.34%"
+            rate: "0.92%"
+        }, {
+            number: 3,
+            symbol: "fx",
+            name: "Function X",
+            icon: fx,
+            isIncrement: true,
+            rate: "1.44%"
         },
+    ]
+
+
+    const trendingBanner = [
+        
+        
     ]
 
     return <div className="text-white">
         <div className={styles.trendingWrapper}>
             <div className="flex justify-between">
-                <h1 className={styles.h1}>Todays Cryptocurrency Prices by Market Cap</h1>
+                <h1 className={styles.h1}>Betchip P2P Exchange Platform</h1>
 
                 <div className="flex">
                     <p className="text-gray-400 ">Highlights &nbsp;</p>
@@ -54,16 +64,16 @@ const Trending = () => {
             </div>
             <br />
             <div className="flex">
-                <p>The global crypto market cap is $1.74T, a &nbsp; </p>
-                <span> <Rate isIncrement={true} rate='0.53%' /> </span>
-                <p> &nbsp; decrease over the last day. <span className="underline">Read More</span> </p>
+                <p>BETCHIP is part of the crypto market cap is $924B, Take part in the  &nbsp; </p>
+                <span> <Rate isIncrement={true} rate='0.95%' /> </span>
+                <p> &nbsp; with the Betchip Reccomended Tokens. <span className="underline">Read More</span> </p>
             </div>
             <br />
 
             <div className={styles.flexCenter}>
                 <TrendingCard title='Trending' icon={fire} trendingData={trendingData} />
-                <TrendingCard title='Biggest Gainers' icon={gainers} trendingData={trendingData} />
-                <TrendingCard title='Recently Added' icon={recent} trendingData={trendingData} />
+                <TrendingBanner title='Betchip Notifications' icon={recent} trendingData={trendingBanner} />
+               
             </div>
         </div>
     </div>

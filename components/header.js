@@ -21,8 +21,8 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <Image
-        alt=''
-        src='https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_white_1.svg'
+        alt='BETCHIP EXCHANGE'
+        src='https://s3.coinmarketcap.com/generated/sparklines/web/7d/2781/4705.svg'
         width={220}
         height={220}
       />
@@ -30,21 +30,21 @@ const Header = () => {
       <div className={styles.headerWrapper}>
         <nav className={styles.nav}>
           <div className={styles.navItem}>
-            <div className={styles.navLink}>Cryptocurrencies</div>
-            <div className={styles.badge} />
+            <div className={styles.navLink}>BETCHIP EXCHANGE</div>
+            
           </div>
 
           <div className={styles.navItem} onClick={getQuote}>
-            <div className={styles.navLink}>Exchanges</div>
+            <div className={styles.navLink}>Betchip Wallet</div>
           </div>
 
           <div className={styles.navItem}>
-            <div className={styles.navLink}>NFT</div>
+            <div className={styles.navLink}>P2P</div>
             <div className={styles.badge} />
           </div>
 
           <div className={styles.navItem}>
-            <div className={styles.navLink}>Cryptown</div>
+            <div className={styles.navLink}>Rewards</div>
             <div className={styles.badge} />
           </div>
 
@@ -53,17 +53,15 @@ const Header = () => {
           </div>
 
           <div className={styles.navItem}>
-            <div className={styles.navLink}>Watchlist</div>
+            <div className={styles.navLink}>Notifications</div>
           </div>
 
           <div className={styles.navItem}>
-            <div className={styles.navLink}>Products</div>
+            <div className={styles.navLink}>Learn Crypto</div>
             <div className={styles.badge} />
           </div>
 
-          <div className={styles.navItem}>
-            <div className={styles.navLink}>Learn</div>
-          </div>
+      
         </nav>
 
         <div className='flex items-center'>

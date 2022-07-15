@@ -3,11 +3,11 @@ import TrendingCardRow from './trendingCardRow'
 import Image from 'next/image'
 
 const styles = {
-  trendingCard: `w-1/3 h-3/5 p-5 py-3 pb-0 bg-[#323546] rounded-xl text-white mr-3`,
+  trendingCard: `w-2/3 p-5 py-3 pb-0 bg-[#323546] rounded-xl text-white mr-3`,
   trendingCardWrapper: `flex items-center justify-between`,
 }
 
-const TrendingCard = ({ icon, title, trendingData }) => {
+const TrendingBanner = ({ icon, title, trendingData }) => {
   return (
     <div className={styles.trendingCard}>
       <div className={styles.trendingCardWrapper}>
@@ -37,4 +37,4 @@ const TrendingCard = ({ icon, title, trendingData }) => {
   )
 }
 
-export default TrendingCard
+export default TrendingBanner
