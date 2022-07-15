@@ -42,7 +42,7 @@ const Trending = () => {
             name: "Function X",
             icon: fx,
             isIncrement: true,
-            rate: "1.44%"
+            rate: "1.45%"
         },
     ]
 
@@ -71,7 +71,7 @@ const Trending = () => {
             <br />
 
             <div className={styles.flexCenter}>
-                <TrendingCard title='Recommended Investments' icon={fire} trendingData={trendingData} />
+                <TrendingCard title='Recommended Cryptos' icon={fire} trendingData={trendingData} />
                 <TrendingBanner title='Betchip Notifications' icon={recent} trendingData={trendingBanner} />
                
             </div>
