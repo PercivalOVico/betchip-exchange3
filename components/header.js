@@ -47,32 +47,17 @@ const Header = () => {
 
       <div className={styles.headerWrapper}>
         <nav className={styles.nav}>
-          <div className={styles.navItem}>
-            <div className={styles.navLink}>BETCHIP EXCHANGE</div>
-            
-          </div>
-
-          <div className={styles.navItem} onClick={getQuote}>
-            <div className={styles.navLink}>Betchip Wallet</div>
-          </div>
+        
 
           <div className={styles.navItem}>
             <div className={styles.navLink}>P2P</div>
             <div className={styles.badge} />
           </div>
 
-          <div className={styles.navItem}>
-            <div className={styles.navLink}>Rewards</div>
-            <div className={styles.badge} />
-          </div>
+        
+         
 
-          <div className={styles.navItem}>
-            <div className={styles.navLink}>Portfolio</div>
-          </div>
-
-          <div className={styles.navItem}>
-            <div className={styles.navLink}>Notifications</div>
-          </div>
+          
 
           <div className={styles.navItem}>
             <div className={styles.navLink}>Learn Crypto</div>
