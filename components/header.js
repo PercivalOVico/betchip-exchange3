@@ -48,6 +48,16 @@ const Header = () => {
       <div className={styles.headerWrapper}>
         <nav className={styles.nav}>
         
+            <div className={styles.navItem}>
+            <div className={styles.navLink}>Buy Crypto</div>
+            
+            </div>
+
+
+            <div className={styles.navItem}>
+            <div className={styles.navLink}>Rewards</div>
+           
+            </div>
 
           <div className={styles.navItem}>
             <div className={styles.navLink}>P2P</div>
@@ -56,14 +66,17 @@ const Header = () => {
 
         
          
-
+         <div></div>
+         <div></div>
           
 
           <div className={styles.navItem}>
             <div className={styles.navLink}>Learn Crypto</div>
-            <div className={styles.badge} />
+            
           </div>
 
+        <div></div>
+        <div></div>
       
         </nav>
          <div className='flex items-center'>
