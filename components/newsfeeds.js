@@ -8,8 +8,7 @@ function Newsfeeds() {
   <div class="carousel-inner relative w-full overflow-hidden">
     <div class="carousel-item active relative float-left w-full text-center">
       <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-        numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+       NEWS FEED 1
       </p>
       <div class="mt-12 mb-6 flex justify-center">
         <img
@@ -18,13 +17,11 @@ function Newsfeeds() {
           alt="smaple image"
         />
       </div>
-      <p class="text-gray-500">- Anna Morian</p>
+      <p class="text-gray-500">- News Source 1</p>
     </div>
     <div class="carousel-item relative float-left w-full text-center">
       <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-        "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
-        repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing
-        elit."
+        "NEWS FEED 2"
       </p>
       <div class="mt-12 mb-6 flex justify-center">
         <img
@@ -33,13 +30,11 @@ function Newsfeeds() {
           alt="smaple image"
         />
       </div>
-      <p class="text-gray-500">- Teresa May</p>
+      <p class="text-gray-500">- News Source 2</p>
     </div>
     <div class="carousel-item relative float-left w-full text-center">
       <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
-        maiores."
+        "NEWS FEED 3"
       </p>
       <div class="mt-12 mb-6 flex justify-center">
         <img
@@ -48,7 +43,7 @@ function Newsfeeds() {
           alt="smaple image"
         />
       </div>
-      <p class="text-gray-500">- Kate Allise</p>
+      <p class="text-gray-500">- News Source 3</p>
     </div>
   </div>
   <button
