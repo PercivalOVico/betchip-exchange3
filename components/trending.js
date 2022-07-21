@@ -64,9 +64,9 @@ const Trending = () => {
             </div>
             <br />
             <div className="flex">
-                <p>BETCHIP is part of the crypto market cap is $924B, Take part in the  &nbsp; </p>
-                <span> <Rate isIncrement={true} rate='0.95%' /> </span>
-                <p> &nbsp; with the Betchip Reccomended Tokens. <span className="underline">Read More</span> </p>
+                <p>BETCHIP makes it EASY for you to BUY or SELL CryptoCurrency in Exchange for Fiat or Other Cryptos  &nbsp; </p>
+                
+                 &nbsp; <span className="underline">JOIN THE CRYPTO MOVE</span>
             </div>
             <br />
 
