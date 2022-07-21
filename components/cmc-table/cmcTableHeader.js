@@ -6,20 +6,20 @@ const styles = {
 }
 
 const CMCtableHeader = () => {
-    return <tbody>
+    return <thead>
         <tr>
             <th></th>
-            <th className="flex items-center"><b># &nbsp;</b><ChevronDown /></th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>24h %</th>
-            <th>7d %</th>
-            <th><div className={styles.textIcon}><p className="mr-2">Market Cap</p> <Info /></div></th>
-            <th><div className={styles.textIcon}><p className="mr-2">Volume(24h)</p> <Info /></div></th>
-            <th><div className={styles.textIcon}><p className="mr-2">Circulating Supply</p> <Info /></div></th>
-            <th>Last 7 days</th>
+            <th  scope="col" className="flex items-center"><b># &nbsp;</b><ChevronDown /></th>
+            <th  scope="col" >Name</th>
+            <th  scope="col">Price</th>
+            <th scope="col">24h %</th>
+            <th scope="col">7d %</th>
+            <th scope="col"><div className={styles.textIcon}><p className="mr-2">Market Cap</p> <Info /></div></th>
+            <th scope="col"><div className={styles.textIcon}><p className="mr-2">Volume(24h)</p> <Info /></div></th>
+            <th scope="col"><div className={styles.textIcon}><p className="mr-2">Circulating Supply</p> <Info /></div></th>
+            <th scope="col">Last 7 days</th>
         </tr>
-    </tbody>
+    </thead>
 }
 
 export default CMCtableHeader

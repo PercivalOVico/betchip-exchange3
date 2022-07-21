@@ -19,7 +19,7 @@ const CMCtable = () => {
 
       for (let i = 0; i < apiResponse.length; i++) {
         const element = apiResponse[i]
-        if (element.cmc_rank <= 10) filteredResponse.push(element)
+        if (element.cmc_rank <= 5) filteredResponse.push(element)
       }
 
       setCoinData(filteredResponse)
@@ -29,9 +29,11 @@ const CMCtable = () => {
   }, [getTopTenCoins])
 
   return (
-    <div className='text-white font-bold'>
-      <div className='mx-auto max-w-screen-2xl'>
-        <table className='w-full'>
+   <div class="flex flex-col  text-white font-bold">
+  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="overflow-hidden">
+        <table class="min-w-full">
           <CMCtableHeader />
 
           {coinData && coinData ? (
@@ -61,6 +63,9 @@ const CMCtable = () => {
         </table>
       </div>
     </div>
+    </div>
+    </div>
+    
   )
 }
 
