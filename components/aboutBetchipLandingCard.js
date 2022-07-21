@@ -7,7 +7,7 @@ function AboutBetchipLandingCard() {
   <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-black shadow-lg">
     <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(7).webp" alt="" />
     <div class="p-6 flex flex-col justify-start">
-      <h5 class="text-gray-900 text-xl font-medium mb-2">BETCHIP CRYPTOS</h5>
+      <h5 class="text-gray-600 text-xl font-medium mb-2">BETCHIP CRYPTOS</h5>
       <p class="text-gray-300 text-base mb-4">
         There are thousands of crypto currency assest on the blockchain. This makes it hard for Potential and Intrested
         Investors to decide on what crypto asset to invest in,
@@ -24,7 +24,7 @@ function AboutBetchipLandingCard() {
   <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-black shadow-lg">
     <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(4).webp" alt="" />
     <div class="p-6 flex flex-col justify-start">
-      <h5 class="text-gray-900 text-xl font-medium mb-2">CRYPTO TRADING</h5>
+      <h5 class="text-gray-600 text-xl font-medium mb-2">CRYPTO TRADING</h5>
       <p class="text-gray-300 text-base mb-4">
        Apart From increasing on your crypto portifoilio BETCHIP EXCHANGE also offers crypto
        Trading services.
