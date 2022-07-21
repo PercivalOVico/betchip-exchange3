@@ -66,7 +66,7 @@ const CarouselNotifications = ({ number, icon, name, symbol, isIncrement, rate }
   
     <div class="carousel-item relative float-left w-full">
       <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"
+        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(4).webp"
         class="block w-full"
         alt="Woman Reading a Book"
       />

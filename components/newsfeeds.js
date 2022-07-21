@@ -25,7 +25,7 @@ function Newsfeeds() {
       </p>
       <div class="mt-12 mb-6 flex justify-center">
         <img
-          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+          src=""
           class="rounded-full w-24 h-24 shadow-lg"
           alt="smaple image"
         />
@@ -38,7 +38,7 @@ function Newsfeeds() {
       </p>
       <div class="mt-12 mb-6 flex justify-center">
         <img
-          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+          src=""
           class="rounded-full w-24 h-24 shadow-lg"
           alt="smaple image"
         />
