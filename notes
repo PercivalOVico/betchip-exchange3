@@ -55,3 +55,7 @@ project name : betchip-exchange
 
 client ID : BIMd_YCwLWuxx8Wyga6Q5Dvn7-by3A7Aayar7kuSu79JGvaRm40zYgOesuHVRnIjI88PcPmOVBM_DOWZVJ5RLik
 Client secret : 206ebd7449f126d520ff89a8be4c563004d38a207e8a2667aec1669824e1fd0f
+
+
+nom command to recuild the tailwindcss-elements  output 
+ npx tailwindcss -i ./src/input.css -o ./dist/output.css

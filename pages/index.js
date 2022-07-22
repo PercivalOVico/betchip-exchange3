@@ -11,7 +11,7 @@ import Footer from '../components/footer';
 import Newsfeeds from '../components/newsfeeds';
 import AboutBetchipLandingCard from '../components/aboutBetchipLandingCard';
 import NavBar from '../components/navBar';
-import Client from './client';
+import ClientTerminal from '../components/clientTerminal';
 
 
 
@@ -39,7 +39,7 @@ export default function Home() {
       <Newsfeeds />
       <div className='mt-20' />
       <Footer />
-      <Client />
+      <ClientTerminal />
     
     </div>
     
