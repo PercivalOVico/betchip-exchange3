@@ -13,7 +13,7 @@ import {
 } from "./icons";
 
 const menuItems = [
-  { id: 1, label: "Dashboard", icon: HomeIcon, link: "/" },
+  { id: 1, label: "Dashboard", icon: HomeIcon, link: "/client" },
   { id: 2, label: "Transactions", icon: ArticleIcon, link: "/transactions" },
   { id: 3, label: "Profile", icon: UsersIcon, link: "/profile" },
   { id: 4, label: "Addresses", icon: VideosIcon, link: "/addresses" },
@@ -50,9 +50,7 @@ const Sidebar = () => {
   const getNavItemClasses = (menu) => {
     return classNames(
       "flex items-center cursor-pointer hover:bg-light-lighter rounded w-full overflow-hidden whitespace-nowrap",
-      {
-        ["bg-light-lighter"]: activeMenu.id === menu.id,
-      }
+   
     );
   };
 
