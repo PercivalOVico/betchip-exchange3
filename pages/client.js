@@ -7,6 +7,8 @@ const Client = () => {
   return (
     <ClientTerminal>
        <ClientDashboard />
+       <br></br>
+       <br></br>
        <ClientDashboardTalble />
     </ClientTerminal>
   )

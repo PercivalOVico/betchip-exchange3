@@ -3,7 +3,7 @@ import React from 'react'
 function AboutBetchipLandingCard() {
   return (
     <div>
-            <div class="flex justify-center">
+            <div class="flex space-x-3 justify-center">
   <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-black shadow-lg">
     <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(7).webp" alt="" />
     <div class="p-6 flex flex-col justify-start">
