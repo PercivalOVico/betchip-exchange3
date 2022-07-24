@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { CoinMarketContext } from '../context/context'
 import { useMoralis } from "react-moralis"
+import LoginModal from './loginModal'
 
 function NavBar() {
     const styles = {
@@ -77,7 +78,9 @@ function NavBar() {
 
    
     <div class="flex items-center relative">
-    <button className={styles.loginButtonCoinytainer} onClick={handleCustomLogin} type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">LOGIN</button>
+    <button type="button" class="inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out transition duration-150 ease-in-out"
+  data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button>
+   <LoginModal />
       <a class="text-white opacity-60 hover:opacity-80 focus:opacity-80 mr-4" href="#">
         <svg
           aria-hidden="true"

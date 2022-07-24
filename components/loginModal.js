@@ -1,52 +1,45 @@
-import { useContext } from 'react'
-import { useMoralis } from "react-moralis"
-import Image from "next/image"
-import styles from "../styles/Home.module.css"
-
-const styles = {
-  modal: `w-screen h-screen bg-gray-900/90 z-10 fixed top-0 left-0 flex items-center justify-center`,
-  modalContent: `bg-white rounded-lg p-3 w-max w-1/3`,
-  input: `w-full p-2 border rounded-lg mb-5 border-gray-600/50 outline-none`,
-  button: `bg-[#6188FF] p-2 px-5 rounded-lg text-white hover:opacity-50`,
-  label: `font-bold text-3xl`,
-  closeModalButton: `hover:text-red-300 text-gray-600 cursor-pointer`,
-}
-
-const loginModal = () => {
-
-    const { authenticate, authError, isAuthenticating, Moralis } = useMoralis();
-
-  const handleCustomLogin = async () => {
-    await authenticate({
-      provider: "web3Auth",
-      clientId: "BIMd_YCwLWuxx8Wyga6Q5Dvn7-by3A7Aayar7kuSu79JGvaRm40zYgOesuHVRnIjI88PcPmOVBM_DOWZVJ5RLik",
-      chainId: Moralis.Chains.ETH_RINKBEY,
-      appLogo: "",
-      theme: "dark",
-      loginMethodsOrder: ["google", "facebook", "twitter", "reddit", "discord", "twitch", "apple", "line", "github", "kakao", "linkedin", "weibo", "wechat", "email_passwordless"],
-    });
-  };
-
- 
- 
+import React from 'react'
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 
-    return (
-       <div className={styles.card}>
-      <Image className={styles.img} src={Logo} width={80} height={80} />
-      {isAuthenticating && <p className={styles.green}>Authenticating</p>}
-      {authError && (
-        <p className={styles.error}>{JSON.stringify(authError.message)}</p>
-      )}
-      <div className={styles.buttonCard}>
-        <button className={styles.loginButton} onClick={handleCustomLogin}>
-          Login with Web3Auth
-        </button>
+
+const LoginModal = () => {
+      const router = useRouter();
+
+  return (
+    <div>
+
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+  id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog relative w-auto pointer-events-none">
+    <div
+      class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+      <div
+        class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+        <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">
+          LOGIN
+        </h5>
+        <button type="button"
+          class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body relative p-4">
+        ...
+      </div>
+      <div
+        class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+        <button type="button"
+          class="inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-yellow-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
+          data-bs-dismiss="modal">Cancle</button>
+        <button onClick={() => {router.push('/client')}}  type="button"
+          class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-200 active:shadow-lg transition duration-150 ease-in-out ml-1">LOGIN</button>
       </div>
     </div>
-    )
-
-  
+  </div>
+</div>
+    </div>
+  )
 }
-
-export default loginModal
+export default LoginModal
